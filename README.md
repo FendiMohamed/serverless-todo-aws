@@ -20,6 +20,8 @@ A full-stack serverless Todo List application leveraging AWS Lambda, DynamoDB, A
   - Monitored by **CloudWatch** for logging and metrics
 - **DynamoDB**: NoSQL database for todos
 - **CloudFront**: CDN for fast delivery, routes traffic to both S3 (static frontend) and API Gateway (backend APIs)
+- **S3**: Static website hosting for the frontend
+- **CloudWatch**: Centralized logging and monitoring for Lambda and API Gateway
 
 ## Monitoring & Security
 
@@ -66,11 +68,11 @@ Each todo item includes:
 
 ## API Endpoints
 
-- `GET /todos` — Fetch all todos
-- `GET /todos/{id}` — Fetch a specific todo
-- `POST /todos` — Create a new todo
-- `PUT /todos/{id}` — Update an existing todo
-- `DELETE /todos/{id}` — Delete a todo
+- `GET /todo` — Fetch all todos
+- `GET /todo/{id}` — Fetch a specific todo
+- `POST /todo` — Create a new todo
+- `PUT /todo/{id}` — Update an existing todo
+- `DELETE /todo/{id}` — Delete a todo
 
 ## Technology Stack
 
